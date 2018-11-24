@@ -1,0 +1,39 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "parser": "babel-eslint",
+  "extends": ["plugin:vue-libs/recommended", "standard", "eslint:recommended"],
+  "plugins": ["standard", "html"],
+  "settings": {
+    "html/html-extensions": [".html", ".vue"]
+  },
+  "rules": {
+    "indent": [
+      "warn",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "quotes": [1, "single"],
+    "semi": ["warn", "always"],
+    "prefer-template": "warn",
+    "no-const-assign": "error",
+    "prefer-rest-params": "warn",
+    "no-duplicate-imports": [
+      "error",
+      {
+        "includeExports": true
+      }
+    ],
+    "no-var": "warn",
+    "no-invalid-this": ["warn"]
+  }
+}
